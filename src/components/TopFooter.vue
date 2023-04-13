@@ -4,7 +4,7 @@
         <div class="text-white h-100 w-50 gy-4 d-flex flex-column flex-wrap">
             <ul v-for="(link, index) in links" :key="index" class="py-2 list-unstyled">
                 <li class="fw-bold pb-1 fs-5">{{ link.title }} </li>
-                <li v-for="topic in link.topics">{{ topic }}</li>
+                <li v-for="topic in link.topics"><a class="text-white text-decoration-none" href="#">{{ topic }}</a></li>
             </ul>
         </div>
         <div class="w-35"><img src="../assets/img/dc-logo-bg.png" alt="logo"></div>

@@ -70,6 +70,10 @@
         color: black;
         padding-top: 3rem;
         padding-bottom: 3rem;
-        border-bottom: 1px solid transparent;
+        border-bottom: 2px solid transparent;
+        
+        &:hover{
+        border-bottom: 2px solid #0d6efd;
+        }
     }
 </style>

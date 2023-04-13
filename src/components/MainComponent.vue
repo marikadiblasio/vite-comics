@@ -1,7 +1,7 @@
 <template>
     <div class="hero d-flex justify-content-center align-items-center">
         <div class="container fw-bold text-white">
-         -- > Content goes here &lt; -- 
+        <span> -- > Content goes here &lt; -- </span>
         </div>
     </div>
 </template>
@@ -18,9 +18,10 @@
         padding-top: 3rem;
         padding-bottom: 3rem;
         position: relative;
-        z-index: 5;
-        // filter: grayscale(1);
-        // filter: brightness(.1);
+        z-index: -2;
+         span {
+             z-index: 3;
+         }
     }
     .hero::after{
         content: '';
@@ -29,7 +30,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0,0,0,0.8);
-        z-index: 1;
+        background-color: rgba(0,0,0,0.95);
+        z-index: -1;
     }
 </style>
