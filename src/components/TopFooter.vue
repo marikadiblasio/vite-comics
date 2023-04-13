@@ -7,7 +7,7 @@
                 <li v-for="topic in link.topics">{{ topic }}</li>
             </ul>
         </div>
-        <div class="w-30"><img src="../assets/img/dc-logo-bg.png" alt="logo"></div>
+        <div class="w-35"><img src="../assets/img/dc-logo-bg.png" alt="logo"></div>
        </div> 
     </footer>
 </template>
