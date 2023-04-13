@@ -6,9 +6,9 @@
                 <li class="text-primary text-uppercase pe-3">Follow Us</li>
                 <li class="pe-3"><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
                 <li class="pe-3"><a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
-                <li class="pe-3"><a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
-                <li class="pe-3"><a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
-                <li class="pe-3"><a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
+                <li class="pe-3"><a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a></li>
+                <li class="pe-3"><a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
+                <li class="pe-3"><a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a></li>
             </ul>
         </div>
     </div>
@@ -16,7 +16,16 @@
 
 <script>
     export default {
-        name: 'BottomFooter'
+        name: 'BottomFooter',
+        // data(){
+        //     return{
+        //         socials: [
+        //             {
+                        
+        //             }
+        //         ]
+        //     }
+        // }
     }
 </script>
 
