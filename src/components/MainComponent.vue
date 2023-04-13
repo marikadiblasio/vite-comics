@@ -8,16 +8,17 @@
 
 <script>
     export default {
-        name: 'MainComponent',
+        name: 'MainComponent'
     }
 </script>
 
 <style lang="scss" scoped>
     .hero {
         background-image: url('../assets/img/jumbotron.jpg');
-        height: 10vh;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         position: relative;
-        z-index: 2;
+        z-index: 5;
         // filter: grayscale(1);
         // filter: brightness(.1);
     }
@@ -31,9 +32,4 @@
         background-color: rgba(0,0,0,0.8);
         z-index: 1;
     }
-    .hero  span{
-            color: white;  
-            filter: brightness(120%);
-            z-index: 10;
-         }
 </style>
