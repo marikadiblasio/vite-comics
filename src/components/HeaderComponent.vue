@@ -4,7 +4,7 @@
             <div><img src="../assets/img/dc-logo.png" alt="Logo"></div>
             <nav>
                 <ul class="d-flex list-unstyled">
-                    <li class="pe-2"><a href="">nav ancora</a></li>
+                    <li v-for="navLink in navLinks" class="pe-4"><a :href="navLink.ref">{{navLink.navTopic}}</a></li>
                 </ul>
             </nav>
         </div>
@@ -16,7 +16,48 @@
         name: 'HeaderComponent',
         data(){
             return{
-
+                navLinks: [
+                    {
+                        ref: '#',
+                        navTopic: 'character'
+                    },
+                    {
+                        ref: '#',
+                        navTopic: 'comics'
+                    },
+                    {
+                        ref: '#',
+                        navTopic: 'movies'
+                    },
+                    {
+                        ref: '#',
+                        navTopic: 'tv'
+                    },
+                    {
+                        ref: '#',
+                        navTopic: 'games'
+                    },
+                    {
+                        ref: '#',
+                        navTopic: 'collectibles'
+                    },
+                    {
+                        ref: '#',
+                        navTopic: 'videos'
+                    },
+                    {
+                        ref: '#',
+                        navTopic: 'fans'
+                    },
+                    {
+                        ref: '#',
+                        navTopic: 'news'
+                    },
+                    {
+                        ref: '#',
+                        navTopic: 'shop'
+                    },
+                ]
             }
         }
     }
