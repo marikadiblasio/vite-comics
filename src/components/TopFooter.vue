@@ -1,9 +1,9 @@
 <template>
     <footer>
        <div class="container h-100 d-flex justify-content-between">
-        <div class="text-white h-100 w-50 gy-4 d-flex flex-column flex-wrap">
-            <ul v-for="(link, index) in links" :key="index" class="py-2 list-unstyled">
-                <li class="fw-bold pb-1 fs-5">{{ link.title }} </li>
+        <div class="text-white h-100 w-50 gy-3 d-flex flex-column flex-wrap">
+            <ul v-for="(link, index) in links" :key="index" class="py-1 list-unstyled mb-0">
+                <li class="fw-bold pb-1 fs-6">{{ link.title }} </li>
                 <li v-for="topic in link.topics"><a class="text-white text-decoration-none" href="#">{{ topic }}</a></li>
             </ul>
         </div>
@@ -72,7 +72,7 @@
 <style lang="scss" scoped>
     footer {
         background-image: url('../assets/img/footer-bg.jpg');
-        height: 350px;
+        height: 300px;
         overflow: hidden;
     }
     .w35{

@@ -1,36 +1,45 @@
 <template>
-    <div class="hero d-flex justify-content-center align-items-center">
-        <div class="container fw-bold text-white">
-        <span> -- > Content goes here &lt; -- </span>
+    <div class="wrapper">
+        <div class="hero">
+            <img src="../assets/img/jumbotron.jpg" alt="hero">
+        </div>
+        <div class="bg-black h-100">
+            <div class="container text-white">
+                <button class="text-uppercase fw-bold fs-5 btn btn-primary rounded-0">Current Series</button>
+                <div class="row">
+                    <CardComponent />
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+    import CardComponent from './CardComponent.vue';
     export default {
-        name: 'MainComponent'
+        name: 'MainComponent',
+        components: {
+            CardComponent
+        }
     }
 </script>
 
 <style lang="scss" scoped>
-    .hero {
-        background-image: url('../assets/img/jumbotron.jpg');
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        position: relative;
-        z-index: -2;
-         span {
-             z-index: 3;
-         }
+    .wrapper{
+        height: calc(100vh - (300px + 90px + 55px + 90px));
     }
-    .hero::after{
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0,0,0,0.95);
-        z-index: -1;
+    .hero {
+        width: 100%;
+        height: 350px;
+        img {
+            display: block;
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+    button.fs-5{
+        transform: translate(0, -50%);
     }
 </style>

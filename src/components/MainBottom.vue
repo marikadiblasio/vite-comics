@@ -2,7 +2,7 @@
     <div class="bg-primary">
         <div class="container">
             <div class="row">
-                <div v-for="link in mainLinks" class="col py-5 pe-3 d-flex align-items-center">
+                <div v-for="link in mainLinks" class="col py-3 pe-3 d-flex align-items-center">
                     <div class="rem-5 pe-2"><img class="img-fluid" :src="link.image" alt="digital"></div>
                     <div>
                         <a href="#"><h5 class="text-uppercase text-white">{{ link.text }}</h5></a>
@@ -47,7 +47,7 @@
 
 <style lang="scss" scoped>
     .rem-5{
-        width: 5rem;
+        width: 3rem;
         cursor: pointer;
     }
 </style>

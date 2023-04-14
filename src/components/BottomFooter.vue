@@ -1,6 +1,6 @@
 <template>
     <div class="bg-dark">
-        <div class="container d-flex justify-content-between align-items-center py-4">
+        <div class="container d-flex justify-content-between align-items-center py-2">
             <button class="btn border border-primary rounded-0 text-white text-uppercase">Sign-Up Now!</button>
             <ul class="d-flex align-items-center list-unstyled">
                 <li class="text-primary text-uppercase pe-3">Follow Us</li>
