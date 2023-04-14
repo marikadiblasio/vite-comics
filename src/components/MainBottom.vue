@@ -2,10 +2,10 @@
     <div class="bg-primary">
         <div class="container">
             <div class="row">
-                <div v-for="link in mainLinks" class="col py-3 pe-3 d-flex align-items-center">
-                    <div class="rem-5 pe-2"><img class="img-fluid" :src="link.image" alt="digital"></div>
+                <div v-for="link in mainLinks" class="col py-md-3 py-0 pe-3 d-flex align-items-center">
+                    <div class="rem-3 pe-2"><img class="img-fluid" :src="link.image" alt="digital"></div>
                     <div>
-                        <a href="#"><h5 class="text-uppercase text-white">{{ link.text }}</h5></a>
+                        <a href="#"><h6 class="text-uppercase text-white">{{ link.text }}</h6></a>
                     </div>
                 </div>
             </div>
@@ -46,8 +46,13 @@
 </script>
 
 <style lang="scss" scoped>
-    .rem-5{
+    .rem-3{
         width: 3rem;
         cursor: pointer;
     }
+    // @media screen and (max-width: 992px) {
+    //     a {
+    //         display: none;
+    //     }
+    // }
 </style>

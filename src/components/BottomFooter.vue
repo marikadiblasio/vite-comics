@@ -16,16 +16,7 @@
 
 <script>
     export default {
-        name: 'BottomFooter',
-        // data(){
-        //     return{
-        //         socials: [
-        //             {
-                        
-        //             }
-        //         ]
-        //     }
-        // }
+        name: 'BottomFooter'
     }
 </script>
 

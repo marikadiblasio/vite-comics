@@ -6,7 +6,7 @@
         </div>
         <div class="bg-black">
             <div class="container  h-100 text-white">
-                <div class="row">
+                <div class="row mx-auto">
                     <CardComponent :image="card.thumb" :title="card.series" v-for="card in cards"/>
                 </div>
                 <button class="text-uppercase mx-auto d-block btn btn-primary rounded-0">Load More</button>
@@ -33,15 +33,15 @@
 
 <style lang="scss" scoped>
     .wrapper{
-        height: calc(100vh - (300px + 90px + 55px + 90px));
+        height: calc(100vh - (20vh + 90px + 55px + 90px));
     }
     .hero {
         width: 100%;
-        height: 300px;
+        height: 20vh;
         img {
             display: block;
             width: 100%;
-            height: 300px;
+            height: 20vh;
             object-fit: cover;
             object-position: top;
         }
@@ -54,7 +54,8 @@
         z-index: 100;
     }
     .bg-black{
-        height: calc(100% - 300px);
+        padding-top: 3rem;
+        height: calc(100% - 20vh);
         overflow-y: auto;
     }
 </style>
